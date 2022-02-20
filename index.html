@@ -4,9 +4,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
+    <style>
+        *{
+            color: white;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color: black;
+        }
+        
+        .signup{
+            border: none;
+            border-radius: 10%;
+            font-size: 15px;
+            padding: 5px;
+            background-color: black;
+            margin-top: 30px;
+            margin-right: 10px;
+        }
+        .signup:hover{                        
+            background-color: gold;
+            color: black;
+        }
+
+        input{
+            background-color: black;
+            color: gray;
+            margin: 20px 20px 10px 20px;
+            border: solid 1.5px gray;
+            padding: 10px;
+            font-size: 15px;
+        }
+        
+        form{
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .login{
+            margin: 20px;
+            border: none;
+            border-radius: 0%;
+            padding: 8px;
+            width: 240px;
+            font-size: 16px;
+            background-image: linear-gradient(pink,gold);
+            color: black;
+        }
+        .login:hover{
+            background-image: linear-gradient(gold,magenta);
+        }
+
+        a:link{
+            color: brown;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:visited {
+            color: brown;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:hover {
+            color: brown;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+        a:active {
+            color: brown;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello there!</h1>
+    <div>
+        <img src="./images/login_top-left.png" style="width: 100px; height: 100px;">
+        <button class="signup" style="float: right;">SIGN UP</button>
+    </div>
+    <div>
+        <h1 style="text-align: center; font-weight: 700; margin-top: 80px;">Login to you account</h1>
+        <p style="color: gray; text-align: center; margin: 15px 20px 30px 20px;">Linux is a family of open-source Unix-like operating systems based on the Linux kernel, an operating system kernel first released on September 17, 1991, by Linus Torvalds.</p>
+    </div>
+    <form>
+        <input type="email" placeholder="Email address"><br>
+        <input type="password" placeholder="Enter password"><br>
+        <button type="submit" class="login">Login</button><br>
+        <a href="https://google.com" style="font-size: small; color: white;">Forgot password?</a><br>
+    </form>
+    <div style="margin-top: 200px; font-size: medium; text-align: center;">
+        <l>Don't have an account?</l>
+        <a href="https://google.com">Create an account</a>
+    </div>
 </body>
 </html>
